@@ -18,7 +18,7 @@ def hello_world():
         inputs = [fever, pain, age, runnynoice, Breathing]
         pred = clf.predict_proba([inputs])[0][1]
         print(pred)
-        return render_template("show.html", inf=round(pred*100)
+        return render_template("show.html", inf=round(pred*100))
     return render_template("index.html")
     # return 'this is probality'+str(pred)
 
